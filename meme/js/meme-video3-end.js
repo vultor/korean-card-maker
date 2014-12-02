@@ -48,8 +48,5 @@ $(document).ready(function(){
 			fontFamily: 'Impact, sans-serif',
 			text: 'This is line 2.'
 		}); //end draw text
-
 	}); //end click
-
-
 }); //end ready

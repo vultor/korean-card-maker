@@ -3,18 +3,38 @@
     <meta charset="utf-8">
     <title>All About the Canvas Tag</title>
     <style>
-    	canvas {
-    		border: 1px dotted black;
-    	}
+        canvas {
+            border: 1px dotted black;
+        }
+        div {
+            float: left;
+        }
     </style>
 </head>
 <body>
-    <h1>My Amazing Canvas</h1>
-    <canvas width="300" height="300" id="canvas1"></canvas>
-    <canvas width="300" height="300" id="canvas2"></canvas>
-    <canvas width="300" height="300" id="canvas3"></canvas>
+    <h1>Meme Generator</h1>
+      <canvas width="640" height="520" id="canvas1"></canvas>
+      <div>
+        <label for="image">Select an image: </label>
+        <select id="image">
+            <option checked>Please select one:</option>
+            <option value="duck">Fall Pond</option>
+            <option value="heart">Korean Food</option>
+            <option value="puppy">Korean Masks</option>
+            <option value="grumpy">Bowing Art</option>
+        </select>
+        <br>
+        <label for="line1">Top line of text:</label>
+        <input type="text" id="line1">
+        <br>
+        <label for="line2">Bottom line of text:</label>
+        <input type="text" id="line2">
+        <br>
+        <button id="create">Create image</button>
+      </div>
 
-    <!-- javascript -->
+
+<!-- javascript -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/jcanvas.min.js"></script>
     <script src="js/app.js"></script>
