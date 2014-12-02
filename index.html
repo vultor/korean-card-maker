@@ -8,30 +8,45 @@
         }
         div {
             float: left;
+            margin: 0 1em;
         }
     </style>
 </head>
 <body>
-    <h1>Meme Generator</h1>
-      <canvas width="640" height="520" id="canvas1"></canvas>
-      <div>
+    <div id="inputs">
+        <h1>Korean Card Maker</h1>
         <label for="image">Select an image: </label>
         <select id="image">
             <option checked>Please select one:</option>
-            <option value="duck">Fall Pond</option>
-            <option value="heart">Korean Food</option>
-            <option value="puppy">Korean Masks</option>
-            <option value="grumpy">Bowing Art</option>
+            <option value="horse">Year of the Horse</option>
+            <option value="food">Korean Food</option>
+            <option value="bow">Bowing Art</option>
+            <option value="masks">Korean Masks</option>
+            <option value="pond">Korean Pond</option>
+            <option value="girls">Girls Day</option>
         </select>
         <br>
-        <label for="line1">Top line of text:</label>
-        <input type="text" id="line1">
+        <label for="greeting">Select a Greeting:</label>
+        <select id="greeting">
+            <option checked>Please select one:</option>
+            <option value="lunar">Happy Lunar New Year</option>
+            <option value="korean">Happy Korean New Year</option>
+            <option value="roman">Saehae Bok Manhi Badeuseyo</option>
+            <option value="hanguk">새해 복 많이 받으세요</option>
+        </select>
         <br>
-        <label for="line2">Bottom line of text:</label>
-        <input type="text" id="line2">
+        <label for="to">To:</label>
+        <input type="text" id="to">
         <br>
-        <button id="create">Create image</button>
-      </div>
+        <label for="from">From:</label>
+        <input type="text" id="from">
+        <br>
+        <button id="insert">Insert names</button>
+        <button id="clear">Clear canvas</button>
+    </div>
+    <div>
+        <canvas width="640" height="600" id="canvas1"></canvas>
+    </div>
 
 
 <!-- javascript -->
